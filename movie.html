@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Seat Booking</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+	<h1>Movie Seat Booking</h1>
+
+	<div class="movies-wrapper" >
+		<div class="movie" id="spiderman" value="8"> <div class="poster-wrapper""> <img src="images/spiderman.png"></div> Spiderman</div>
+
+		<div class="movie" id="blade-runner" value="12"> <div class="poster-wrapper"><img src="images/blade-runner.jpg"></div> Blade Runner 2049 </div>
+
+		<div class="movie"  id="batman-begins" value="10"> <div class="poster-wrapper"><img src="images/batman-begins.jpg"></div> Batman Begins</div>
+
+		<div class="movie" id="parasite" value="10"> <div class="poster-wrapper"><img src="images/parasite.jpg"></div> Parasite </div>
+
+		<div class="movie" id="star-wars" value="10"> <div class="poster-wrapper"><img src="images/empire-strikes.jpg"></div> Star Wars </div>
+	</div>
+
+	<div class="hideable">
+		<div class="legend unselectable">
+			<div class="seat free-seat"></div>Unoccupied
+			<div class="seat taken-seat"></div>Taken
+			<div class="seat selected-seat"></div>Selected
+		</div>
+		
+		<div class="screen"> </div>
+		<div class="seats-wrapper">
+			<div class="seats-side">
+				<div class="seat"></div>
+				<div class="seat"></div> 
+				<div class="seat"></div>
+				<div class="seat"></div> 
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+			</div>
+			<div class="seats-mid">
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+			</div>
+			<div class="seats-side">
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="receipt-wrapper">
+	<p>Movie : <span id="receipt-movie" class="receipt"> Please select a movie</span></p>
+	<p>Tickets: <span class="receipt-ticket receipt">0</span></p>
+	<p>Subtotal: <span class="receipt-ticket receipt">0</span> x $<span class="receipt-price receipt"></span></p>
+	<p>Total ...... <span id="receipt-total" class="receipt">0</span></p>
+	<button id="reset"> Reset </button>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
